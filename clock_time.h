@@ -40,18 +40,18 @@ class clock_time
 };
 
 //Boolean Comparisons
-bool operator<(clock_time a, clock_time b);
-bool operator>(clock_time a, clock_time b);
-bool operator==(clock_time a, clock_time b);
-bool operator<=(clock_time a, clock_time b);
-bool operator>=(clock_time a, clock_time b);
+bool operator<(const clock_time& a, const clock_time& b);
+bool operator>(const clock_time& a, const clock_time& b);
+bool operator==(const clock_time& a, const clock_time& b);
+bool operator<=(const clock_time& a, const clock_time& b);
+bool operator>=(const clock_time& a, const clock_time& b);
 //Add times
 //(1 day, 3 hours, 7 minutes, 28 seconds)
 //+ (3 days, 22 hours, 54 minutes, 33 seconds)
 //--------------------------------------------
 //(5 days, 2 hours, 2 minutes, 1 seconds)
-clock_time operator+(clock_time a, clock_time b);
+clock_time operator+(const clock_time& a, const clock_time& b);
 //Print out as (D days, H hours, M minutes, S seconds)
-ostream & operator<<(ostream & out, const clock_time a);
+ostream & operator<<(ostream & out, const clock_time& a);
 
 #endif
